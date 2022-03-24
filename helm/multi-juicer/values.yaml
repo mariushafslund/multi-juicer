@@ -51,11 +51,11 @@ balancer:
     externalIPs: null
   resources:
     requests:
-      memory: 256Mi
-      cpu: 400m
+      memory: 512Mi
+      cpu: 800m
     limits:
-      memory: 256Mi
-      cpu: 400m
+      memory: 512Mi
+      cpu: 800m
   securityContext: {}
   # -- Optional Configure kubernetes scheduling affinity for the created JuiceShops (see: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity)
   affinity: {}
@@ -104,8 +104,8 @@ juiceShop:
   # -- Optional resources definitions to set for each JuiceShop instance
   resources:
     requests:
-      cpu: 150m
-      memory: 200Mi
+      cpu: 300m
+      memory: 400Mi
   #  limits:
   #    cpu: 100m
   #    memory: 200Mi
